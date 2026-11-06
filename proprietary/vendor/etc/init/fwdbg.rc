@@ -1,0 +1,9 @@
+service fwdbg /vendor/bin/fwdbg
+    class core
+    user root
+    group root media graphics
+    oneshot
+    disabled
+
+on property:sys.boot_completed=1
+    start fwdbg

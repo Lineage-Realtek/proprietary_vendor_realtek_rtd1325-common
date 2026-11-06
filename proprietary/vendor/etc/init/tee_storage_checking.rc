@@ -1,0 +1,6 @@
+service tee_storage_checking /vendor/bin/tee_storage_checking
+    class main
+    user system
+    group system
+    oneshot
+

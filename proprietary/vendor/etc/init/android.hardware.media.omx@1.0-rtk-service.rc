@@ -1,0 +1,6 @@
+service vendor.media.omx-rtk-hal /vendor/bin/hw/android.hardware.media.omx@1.0-rtk-service
+    class core
+    user mediacodec
+    group camera drmrpc mediadrm media
+    ioprio rt 4
+    task_profiles ProcessCapacityHigh

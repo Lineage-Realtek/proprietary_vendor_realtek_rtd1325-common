@@ -1,0 +1,8 @@
+on property:vendor.all.modules.ready=1
+    start seutil-1-0
+
+service seutil-1-0 /vendor/bin/hw/vendor.realtek.seutil.provider@1.0-service
+    user media
+    group system
+    capabilities SYS_NICE
+    task_profiles ProcessCapacityHigh HighPerformance

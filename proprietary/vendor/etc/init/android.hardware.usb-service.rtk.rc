@@ -1,0 +1,4 @@
+service vendor.usb_rtk /vendor/bin/hw/android.hardware.usb-service.rtk
+    class hal
+    user root
+    group root

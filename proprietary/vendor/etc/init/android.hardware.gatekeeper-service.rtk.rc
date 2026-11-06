@@ -1,0 +1,4 @@
+service vendor.gatekeeper_rtk /vendor/bin/hw/android.hardware.gatekeeper-service.rtk
+    class hal
+    user system
+    group system

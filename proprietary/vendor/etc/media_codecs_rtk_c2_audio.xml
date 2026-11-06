@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!--
+<!DOCTYPE MediaCodecs [
+<!ELEMENT MediaCodecs (Decoders,Encoders)>
+<!ELEMENT Decoders (MediaCodec*)>
+<!ELEMENT Encoders (MediaCodec*)>
+<!ELEMENT MediaCodec (Type*,Quirk*)>
+<!ATTLIST MediaCodec name CDATA #REQUIRED>
+<!ATTLIST MediaCodec type CDATA>
+<!ELEMENT Type EMPTY>
+<!ATTLIST Type name CDATA #REQUIRED>
+<!ELEMENT Quirk EMPTY>
+<!ATTLIST Quirk name CDATA #REQUIRED>
+]>
+
+There's a simple and a complex syntax to declare the availability of a
+media codec:
+
+A codec that properly follows the OpenMax spec and therefore doesn't have any
+quirks and that only supports a single content type can be declared like so:
+
+    <MediaCodec name="OMX.foo.bar" type="something/interesting" />
+
+If a codec has quirks OR supports multiple content types, the following syntax
+can be used:
+
+    <MediaCodec name="OMX.foo.bar" >
+        <Type name="something/interesting" />
+        <Type name="something/else" />
+        ...
+        <Quirk name="requires-allocate-on-input-ports" />
+        <Quirk name="requires-allocate-on-output-ports" />
+        <Quirk name="output-buffers-are-unreadable" />
+    </MediaCodec>
+
+Only the three quirks included above are recognized at this point:
+
+"requires-allocate-on-input-ports"
+    must be advertised if the component does not properly support specification
+    of input buffers using the OMX_UseBuffer(...) API but instead requires
+    OMX_AllocateBuffer to be used.
+
+"requires-allocate-on-output-ports"
+    must be advertised if the component does not properly support specification
+    of output buffers using the OMX_UseBuffer(...) API but instead requires
+    OMX_AllocateBuffer to be used.
+
+"output-buffers-are-unreadable"
+    must be advertised if the emitted output buffers of a decoder component
+    are not readable, i.e. use a custom format even though abusing one of
+    the official OMX colorspace constants.
+    Clients of such decoders will not be able to access the decoded data,
+    naturally making the component much less useful. The only use for
+    a component with this quirk is to render the output to the screen.
+    Audio decoders MUST NOT advertise this quirk.
+    Video decoders that advertise this quirk must be accompanied by a
+    corresponding color space converter for thumbnail extraction,
+    matching surfaceflinger support that can render the custom format to
+    a texture and possibly other code, so just DON'T USE THIS QUIRK.
+
+-->
+
+<!-- Important Note: "concurrent-instances" & "max-channel-count" is required when add new format.-->
+<Included>
+    <Decoders>
+        <MediaCodec name="c2.realtek.audio.ac3.decoder" type="audio/ac3">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="6" />
+        </MediaCodec>
+        <MediaCodec name="c2.realtek.audio.eac3.decoder" type="audio/eac3">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="8" />
+        </MediaCodec>
+        <MediaCodec name="c2.realtek.audio.dts.decoder" type="audio/dts">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="6" />
+        </MediaCodec>
+        <MediaCodec name="c2.realtek.audio.dts-hd.decoder" type="audio/dts-hd">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="8" />
+        </MediaCodec>
+        <MediaCodec name="c2.realtek.audio.mlp.decoder" type="audio/mlp">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="2" />
+        </MediaCodec>
+        <MediaCodec name="c2.realtek.audio.wma.decoder" type="audio/wma">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="2" />
+        </MediaCodec>
+        <MediaCodec name="c2.realtek.audio.wmapro.decoder" type="audio/wmapro">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="2" />
+        </MediaCodec>
+        <MediaCodec name="c2.realtek.audio.vnd.dts.decoder" type="audio/vnd.dts">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="8" />
+        </MediaCodec>
+        <MediaCodec name="c2.realtek.audio.mp1.decoder" type="audio/mpeg-L1">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="2" />
+        </MediaCodec>
+        <MediaCodec name="c2.realtek.audio.mp2.decoder" type="audio/mpeg-L2">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="2" />
+        </MediaCodec>
+        <MediaCodec name="c2.realtek.audio.mp3.decoder" type="audio/mpeg">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="2" />
+        </MediaCodec>
+        <MediaCodec name="c2.realtek.audio.alac.decoder" type="audio/alac">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="2" />
+        </MediaCodec>
+        <MediaCodec name="c2.realtek.audio.alac_caff.decoder" type="audio/alac_caff">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="2" />
+        </MediaCodec>
+        <MediaCodec name="c2.realtek.audio.aac-main.decoder" type="audio/aac-main">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="2" />
+        </MediaCodec>
+        <MediaCodec name="c2.realtek.audio.aac-latm.decoder" type="audio/aac-latm">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="2" />
+        </MediaCodec>
+        <MediaCodec name="c2.realtek.audio.x-pcm.decoder" type="audio/x-pcm">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="2" />
+        </MediaCodec>
+        <MediaCodec name="c2.realtek.audio.adpcm.decoder" type="audio/adpcm">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="2" />
+        </MediaCodec>
+        <MediaCodec name="c2.realtek.audio.dsd-dsf.decoder" type="audio/dsd-dsf">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="2" />
+        </MediaCodec>
+        <MediaCodec name="c2.realtek.audio.mhm1.decoder" type="audio/mhm1">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="2" />
+        </MediaCodec>
+        <MediaCodec name="c2.realtek.audio.ape.decoder" type="audio/ape">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="2" />
+        </MediaCodec>
+        <!--MediaCodec name="c2.realtek.audio.3gpp.decoder" type="audio/3gpp">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="2" />
+        </MediaCodec-->
+        <!--MediaCodec name="c2.realtek.audio.amr-wb.decoder" type="audio/amr-wb">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="2" />
+        </MediaCodec-->
+        <!--MediaCodec name="c2.realtek.audio.mp4a-latm.decoder" type="audio/mp4a-latm">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="2" />
+        </MediaCodec-->
+        <!--MediaCodec name="c2.realtek.audio.g711-mlaw.decoder" type="audio/g711-mlaw">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="2" />
+        </MediaCodec-->
+        <!--MediaCodec name="c2.realtek.audio.flac.decoder" type="audio/flac">
+            <Limit name="concurrent-instances" max="8" />
+            <Limit name="max-channel-count"  value="2" />
+        </MediaCodec-->
+    </Decoders>
+</Included>

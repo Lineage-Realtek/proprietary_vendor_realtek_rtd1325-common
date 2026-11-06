@@ -1,0 +1,5 @@
+{
+  "hdrOutputType":"always",
+  "formatNotificationType":"suppressible",
+  "minVideoFramesForPlaybackStart":36
+}

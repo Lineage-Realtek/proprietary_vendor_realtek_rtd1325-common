@@ -1,0 +1,24 @@
+{
+  "audiocaps": {
+    "continuousAudio": true,
+    "uiAudio": true,
+    "uiAudioBufferDelayOffset": 170,
+    "pcm": {
+      "mixing": true,
+      "transition": "ease"
+    },
+    "ddplus": {
+      "enabled": true,
+      "mixing": true,
+      "continuous": true,
+      "transition": "ease",
+      "bufSize": 14336
+    },
+    "atmos": {
+      "enabled": true,
+      "mixing": true,
+      "continuous": true,
+      "transition": "ease"
+    }
+  }
+}

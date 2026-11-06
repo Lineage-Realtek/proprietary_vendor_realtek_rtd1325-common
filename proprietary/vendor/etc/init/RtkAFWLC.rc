@@ -1,0 +1,5 @@
+service RtkAFWLC /vendor/bin/RtkAFWLC
+    class core
+    user root
+    group media system audio
+    oneshot

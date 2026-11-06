@@ -1,0 +1,8 @@
+service android-hardware-media-c2-hal-1-2 /vendor/bin/hw/android.hardware.media.c2@1.2-rtk-service
+    class hal
+    user mediacodec
+    group camera mediadrm drmrpc media
+    ioprio rt 4
+    capabilities SYS_NICE
+    task_profiles ProcessCapacityHigh HighPerformance
+

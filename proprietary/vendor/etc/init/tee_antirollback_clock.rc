@@ -1,0 +1,8 @@
+service tee_antirollback_clock /vendor/bin/tee_antirollback_clock
+    class core
+    user root
+    group root
+    capabilities SYS_RAWIO NET_RAW
+    #disabled
+    oneshot
+

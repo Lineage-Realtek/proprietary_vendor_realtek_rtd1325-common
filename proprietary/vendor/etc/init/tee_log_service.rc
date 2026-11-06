@@ -1,0 +1,5 @@
+service tee_log_service /vendor/bin/tee_log_service.sh
+    class core
+    user root
+    disabled
+    group root system

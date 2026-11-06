@@ -1,0 +1,109 @@
+[MS12.MAT.NF]
+pcmNonTunnel = -20
+pcmTunnel = 45
+eac3NonTunnel = 5
+eac3Tunnel = 35
+ac4NonTunnel = 40
+ac4Tunnel = 50
+nrdp_uiAudioBufferDelayOffset = 60
+lpcm51NonTunnel = 0
+
+[MS12.DDP.NF]
+pcmNonTunnel = -25
+pcmTunnel = 60
+eac3NonTunnel = 20
+eac3Tunnel = 55
+ac4NonTunnel = 60
+ac4Tunnel = 113
+nrdp_uiAudioBufferDelayOffset = 85
+lpcm51NonTunnel = 0
+
+[MS12.PCM.NF]
+pcmNonTunnel = -2
+pcmTunnel = 30
+eac3NonTunnel = 0
+eac3Tunnel = 20
+ac4NonTunnel = 40
+ac4Tunnel = 20
+nrdp_uiAudioBufferDelayOffset = 50
+lpcm51NonTunnel = -2
+
+[MS12.MAT.CERT]
+pcmNonTunnel = -30
+pcmTunnel = 120
+eac3NonTunnel = 10
+eac3Tunnel = 50
+ac4NonTunnel = 40
+ac4Tunnel = 50
+nrdp_uiAudioBufferDelayOffset = 60
+lpcm51NonTunnel = -30
+
+[MS12.DDP.CERT]
+pcmNonTunnel = -40
+pcmTunnel = 150
+eac3NonTunnel = 40
+eac3Tunnel = 80
+ac4NonTunnel = 60
+ac4Tunnel = 113
+nrdp_uiAudioBufferDelayOffset = 85
+lpcm51NonTunnel = -40
+
+[MS12.PCM.CERT]
+pcmNonTunnel = -25
+pcmTunnel = 50
+eac3NonTunnel = 40
+eac3Tunnel = 50
+ac4NonTunnel = 40
+ac4Tunnel = 20
+nrdp_uiAudioBufferDelayOffset = 50
+lpcm51NonTunnel = -25
+
+[MS12.MAT]
+pcmNonTunnel = -20
+pcmTunnel = 79
+eac3NonTunnel = 63
+eac3Tunnel = 85
+ac4NonTunnel = 58
+ac4Tunnel = 86
+nrdp_uiAudioBufferDelayOffset = 60
+lpcm51NonTunnel = 92
+
+[MS12.DDP]
+pcmNonTunnel = 7
+pcmTunnel = 60
+eac3NonTunnel = 40
+eac3Tunnel = 50
+ac4NonTunnel = 60
+ac4Tunnel = 58
+nrdp_uiAudioBufferDelayOffset = 85
+lpcm51NonTunnel = 92
+
+[MS12.PCM]
+pcmNonTunnel = -2
+pcmTunnel = 30
+eac3NonTunnel = 0
+eac3Tunnel = 40
+ac4NonTunnel = 40
+ac4Tunnel = 20
+nrdp_uiAudioBufferDelayOffset = 50
+lpcm51NonTunnel = 57
+
+[HIFI.Passthrough]
+pcmNonTunnel = 10
+pcmTunnel = 20
+eac3NonTunnel = -50
+eac3Tunnel = -26
+ac4NonTunnel = 70
+ac4Tunnel = -15
+nrdp_uiAudioBufferDelayOffset = 60
+lpcm51NonTunnel = 10
+
+[NonMS12]
+pcmNonTunnel = 26
+pcmTunnel = 15
+eac3NonTunnel = 55
+eac3Tunnel = -20
+ac4NonTunnel = 70
+ac4Tunnel = -15
+nrdp_uiAudioBufferDelayOffset = 60
+lpcm51NonTunnel = 0

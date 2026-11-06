@@ -1,0 +1,4 @@
+service vendor.keymint-rtk /vendor/bin/hw/android.hardware.security.keymint-service.rtk
+    class early_hal
+    user system
+    group system drmrpc

@@ -1,0 +1,5 @@
+service RtkKeyset /vendor/bin/RtkKeyset
+    class core
+    user root
+    group root media mediadrm system
+    oneshot

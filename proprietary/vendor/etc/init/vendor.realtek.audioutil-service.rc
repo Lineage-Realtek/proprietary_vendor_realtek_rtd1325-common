@@ -1,0 +1,5 @@
+service vendor.realtek.audioutil /vendor/bin/hw/vendor.realtek.audioutil-service
+    class hal
+    user system
+    group system media camera
+    task_profiles ProcessCapacityHigh HighPerformance

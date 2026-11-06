@@ -1,0 +1,5201 @@
+//
+// Automatically generated file. DO NOT MODIFY
+//
+
+soong_namespace {
+    imports: [
+        "device/realtek/rtd1325-common",
+    ],
+}
+
+cc_prebuilt_library_shared {
+    name: "arm.graphics-V3-ndk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/arm.graphics-V3-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "arm.graphics-V4-ndk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/arm.graphics-V4-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "camera.device.aidl-external-rtk-impl",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/camera.device.aidl-external-rtk-impl.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libhardware",
+                "libcamera_metadata",
+                "libfmq",
+                "libsync",
+                "libyuv",
+                "libjpeg",
+                "libexif",
+                "libtinyxml2",
+                "libui-v34",
+                "libRTKAllocator",
+                "libRtkIpc",
+                "libDeInterlace",
+                "android.hardware.camera.provider-V1-ndk",
+                "android.hardware.camera.common-V1-ndk",
+                "android.hardware.camera.device-V1-ndk",
+                "android.hardware.graphics.common-V7-ndk",
+                "android.hardware.graphics.mapper@2.0",
+                "android.hardware.graphics.mapper@3.0",
+                "android.hardware.graphics.mapper@4.0",
+                "libgralloctypes",
+                "android.hardware.power@1.0",
+                "android.hardware.power-V1-ndk",
+                "android.hardware.power@1.1",
+                "android.hardware.power@1.2",
+                "android.hardware.power@1.3",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libGLES_mali",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/egl/libGLES_mali.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.allocator-V2-ndk",
+                "libbinder_ndk",
+                "libnativewindow",
+                "libutils",
+                "android.hardware.graphics.mapper@4.0",
+                "libgralloctypes",
+                "libhidlbase",
+                "liblog",
+                "libcutils",
+                "libhardware",
+                "android.hardware.graphics.common-V7-ndk",
+                "libbase",
+                "libdmabufheap",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "egl",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.audio.effect@7.0-impl",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/android.hardware.audio.effect@7.0-impl.so",
+            ],
+            shared_libs: [
+                "libaudioutils",
+                "libbase",
+                "libcutils",
+                "libeffects",
+                "libfmq",
+                "libhidlbase",
+                "libhidlmemory",
+                "liblog",
+                "libutils",
+                "android.hardware.audio.common-util",
+                "android.hidl.memory@1.0",
+                "android.hardware.audio.common@7.0",
+                "android.hardware.audio.common@7.0-util",
+                "android.hardware.audio.effect@7.0",
+                "android.hardware.audio.effect@7.0-util",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.audio@7.0-impl",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/android.hardware.audio@7.0-impl.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libfmq",
+                "libhardware",
+                "libhidlbase",
+                "liblog",
+                "libmedia_helper",
+                "libmediautils_vendor-rtk",
+                "libmemunreachable",
+                "libutils",
+                "android.hardware.audio.common-util",
+                "android.hardware.audio@7.0",
+                "android.hardware.audio@7.0-util",
+                "android.hardware.audio.common@7.0",
+                "android.hardware.audio.common@7.0-enums",
+                "android.hardware.audio.common@7.0-util",
+                "libbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.bluetooth@1.0-impl",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl.so",
+            ],
+            shared_libs: [
+                "android.hardware.bluetooth@1.0",
+                "libbase",
+                "libcutils",
+                "libhardware",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.graphics.allocator-V1-arm",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/android.hardware.graphics.allocator-V1-arm.so",
+            ],
+            shared_libs: [
+                "arm.graphics-V3-ndk",
+                "android.hardware.graphics.common@1.2",
+                "android.hardware.graphics.common-V7-ndk",
+                "libhidlbase",
+                "libgralloctypes",
+                "libdrm",
+                "libutils",
+                "liblog",
+                "libhardware",
+                "libcutils",
+                "libbase",
+                "android.hardware.graphics.allocator-V1-ndk",
+                "android.hardware.graphics.mapper@4.0",
+                "libbinder_ndk",
+                "libRTKAllocator_alloc_only",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.graphics.mapper@4.0-impl-arm",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-arm.so",
+            ],
+            shared_libs: [
+                "arm.graphics-V3-ndk",
+                "android.hardware.graphics.common@1.2",
+                "android.hardware.graphics.common-V7-ndk",
+                "libbase",
+                "libhardware",
+                "liblog",
+                "libcutils",
+                "libsync",
+                "libutils",
+                "libnativewindow",
+                "libhidlbase",
+                "libgralloctypes",
+                "libdrm",
+                "android.hardware.graphics.mapper@4.0",
+                "libRTKAllocator_alloc_only",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.renderscript@1.0-impl",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/android.hardware.renderscript@1.0-impl.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libhidlbase",
+                "libutils",
+                "android.hardware.renderscript@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "audio.primary.default",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/audio.primary.default.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "audio.primary.nontuner",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/audio.primary.nontuner.so",
+            ],
+            shared_libs: [
+                "libfw_socket_client",
+                "libstagefright_foundation",
+                "liblog",
+                "libcutils",
+                "libtinyalsa",
+                "libtinycompress",
+                "libaudioutils",
+                "libaudioroute-v34",
+                "libhidlbase",
+                "android.hardware.power@1.0",
+                "android.hardware.power@1.1",
+                "android.hardware.power@1.2",
+                "android.hardware.power@1.3",
+                "android.hardware.power-V1-ndk",
+                "android.hardware.graphics.composer3-V2-ndk",
+                "vendor.realtek.hdmi-V1-ndk",
+                "libion",
+                "libprocessgroup",
+                "libutils",
+                "libhardware",
+                "libAudioUtil_internal",
+                "librtkdrm",
+                "libDrmExtAidlClient",
+                "libTEEapi",
+                "libSidebandClient",
+                "libbinder",
+                "libbinder_ndk",
+                "libvndksupport",
+                "libgui_rtk",
+                "libRTKAllocator",
+                "libRTKOMX_OSAL_RTK",
+                "libRTK_lib",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "audio.r_submix.default",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/audio.r_submix.default.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libmedia_helper",
+                "libnbaio_mono",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "audio.usb.default",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/audio.usb.default.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libaudioutils",
+                "libtinyalsa",
+                "libalsautils-rtk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "gralloc.default",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/gralloc.default.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "hdcp.rtd1325",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/hdcp.rtd1325.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libhardware",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "hdmi.rtd1325",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/hdmi.rtd1325.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libRTK_lib",
+                "libhardware",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "hdmi_cec.rtd1325",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/hdmi_cec.rtd1325.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libsysutils",
+                "libhardware_legacy",
+                "libRTK_lib",
+                "vendor.realtek.audioutil@1.0",
+                "libbinder",
+                "libhidlbase",
+                "vendor.realtek.audioutil-V2-ndk",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "tv_input.default",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/tv_input.default.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.realtek.audioutil-impl",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/vendor.realtek.audioutil-impl.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libbinder_ndk",
+                "libutils",
+                "libcutils",
+                "libbinder",
+                "liblog",
+                "libion",
+                "libAudioUtil_internal",
+                "libHDMIRxAudioSource",
+                "vendor.realtek.audioutil-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.realtek.seutil.provider@1.0-impl",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/vendor.realtek.seutil.provider@1.0-impl.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libbinder",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libsysutils",
+                "vendor.realtek.seutil.common@1.0",
+                "vendor.realtek.seutil.provider@1.0",
+                "libhwse.rtd1325",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libAudioUtil_internal",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libAudioUtil_internal.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libRTK_lib",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libDeInterlace",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libDeInterlace.so",
+            ],
+            shared_libs: [
+                "libui-v34",
+                "libutils",
+                "liblog",
+                "libcutils",
+                "libRTKAllocator",
+                "libRTK_lib",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libDrmExtAidlClient",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libDrmExtAidlClient.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbinder",
+                "libutils",
+                "librtkdrm",
+                "libbinder_ndk",
+                "android.hardware.graphics.composer3-V2-ndk",
+                "vendor.realtek.hdmi-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libHDMIDv",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libHDMIDv.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libHDMIRxAudioSource",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libHDMIRxAudioSource.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libRTKOMX_OSAL_RTK",
+                "libRTK_lib",
+                "libion",
+                "librtk_ion",
+                "librtk_ion_util",
+                "libhardware_legacy",
+                "libhardware",
+                "libsysutils",
+                "libRTKAllocator",
+                "libfw_socket_client",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libHDMIServiceCore",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libHDMIServiceCore.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libbinder",
+                "liblog",
+                "librtk_ion",
+                "libion",
+                "libutils",
+                "libcutils",
+                "libhardware_legacy",
+                "libhardware",
+                "libsysutils",
+                "libRTK_lib",
+                "libRTKAllocator",
+                "libHDMIDv",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libOMX.realtek.audio.dec",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libOMX.realtek.audio.dec.so",
+            ],
+            shared_libs: [
+                "libfw_socket_client",
+                "libRTKOMX_OSAL_RTK",
+                "libRTK_lib",
+                "libaudioutils",
+                "libz",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libhardware",
+                "libion",
+                "librtk_ion",
+                "libRTKAllocator",
+                "libext_rtk_ion",
+                "libTEEapi",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libOMX_Core",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libOMX_Core.so",
+            ],
+            shared_libs: [
+                "libAudioUtil_internal",
+                "libRTK_lib",
+                "liblog",
+                "libutils",
+                "libhardware_legacy",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libRTKAllocator",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libRTKAllocator.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libhardware",
+                "libion",
+                "libui-v34",
+                "librtk_ion",
+                "libext_rtk_ion",
+                "libTEEapi",
+                "libhwse.rtd1325",
+                "libRtkIpc",
+                "android.hardware.graphics.mapper@4.0",
+                "libhidlbase",
+                "libgralloctypes",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libRTKAllocator_alloc_only",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libRTKAllocator_alloc_only.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libion",
+                "librtk_ion",
+                "libext_rtk_ion",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libRTKOMX_OSAL_RTK",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libRTKOMX_OSAL_RTK.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libutilscallstack",
+                "libRTK_lib",
+                "libui-v34",
+                "libion",
+                "librtk_ion",
+                "libRTKAllocator",
+                "libext_rtk_ion",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libRTK_lib",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libRTK_lib.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libion",
+                "librtk_ion",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libRpcMem",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libRpcMem.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libRtkIpc",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libRtkIpc.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libbinder",
+                "libhidlbase",
+                "vendor.realtek.seutil.provider@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libRtkKeysetMKII",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libRtkKeysetMKII.so",
+            ],
+            shared_libs: [
+                "libteec",
+                "libcutils",
+                "liblog",
+                "libssl",
+                "libcrypto",
+                "libtee_secure_store_agent",
+                "librtkotp_api",
+                "librtkotp_flash_api",
+                "libinstall_agent",
+                "librtkion",
+                "libtee_nv_seg_tool",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libSidebandClient",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libSidebandClient.so",
+            ],
+            shared_libs: [
+                "libbinder_shim_rtk",
+                "libgui_rtk",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libbinder",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libTEEapi",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libTEEapi.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libion",
+                "libteec",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libVoutUtil_internal",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libVoutUtil_internal.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libRTK_lib",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "lib_android_keymaster_keymint_utils-rtk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/lib_android_keymaster_keymint_utils-rtk.so",
+            ],
+            shared_libs: [
+                "android.hardware.security.keymint-V3-ndk",
+                "libbase",
+                "libhardware",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libalsautils-rtk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libalsautils-rtk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libaudioutils",
+                "libtinyalsa",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbt-vendor-seekwave",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libbt-vendor-seekwave.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbt-vendor",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libbt-vendor.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbuflock",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libbuflock.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libc2plugin_store",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libc2plugin_store.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libbase",
+                "libutils",
+                "libcodec2_hidl@1.0-rtk",
+                "libcodec2_hidl@1.1-rtk",
+                "libcodec2_hidl@1.2-rtk",
+                "libcodec2_vndk-rtk",
+                "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_hidl@1.0-rtk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libcodec2_hidl@1.0-rtk.so",
+            ],
+            shared_libs: [
+                "libcodec2_hidl_shim_rtk",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.media@1.0",
+                "android.hardware.media.bufferpool@2.0",
+                "android.hardware.media.c2@1.0",
+                "android.hardware.media.omx@1.0",
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk-rtk",
+                "libcutils",
+                "libhidlbase",
+                "liblog",
+                "libstagefright_bufferpool@2.0.1-rtk",
+                "libui-v34",
+                "libutils",
+                "libstagefright_bufferqueue_helper",
+                "libcodec2_hidl_plugin-rtk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_hidl@1.1-rtk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libcodec2_hidl@1.1-rtk.so",
+            ],
+            shared_libs: [
+                "libcodec2_hidl_shim_rtk",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.media@1.0",
+                "android.hardware.media.bufferpool@2.0",
+                "android.hardware.media.c2@1.0",
+                "android.hardware.media.c2@1.1",
+                "android.hardware.media.omx@1.0",
+                "libbase",
+                "libcodec2",
+                "libcodec2_hidl@1.0-rtk",
+                "libcodec2_vndk-rtk",
+                "libcutils",
+                "libhidlbase",
+                "liblog",
+                "libstagefright_bufferpool@2.0.1-rtk",
+                "libui-v34",
+                "libutils",
+                "libstagefright_bufferqueue_helper",
+                "libcodec2_hidl_plugin-rtk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_hidl@1.2-rtk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libcodec2_hidl@1.2-rtk.so",
+            ],
+            shared_libs: [
+                "libcodec2_hidl_shim_rtk",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.media@1.0",
+                "android.hardware.media.bufferpool@2.0",
+                "android.hardware.media.c2@1.0",
+                "android.hardware.media.c2@1.1",
+                "android.hardware.media.c2@1.2",
+                "android.hardware.media.omx@1.0",
+                "libbase",
+                "libcodec2",
+                "libcodec2_hidl@1.0-rtk",
+                "libcodec2_hidl@1.1-rtk",
+                "libcodec2_vndk-rtk",
+                "libcutils",
+                "libhidlbase",
+                "liblog",
+                "libstagefright_bufferpool@2.0.1-rtk",
+                "libui-v34",
+                "libutils",
+                "libstagefright_bufferqueue_helper",
+                "libcodec2_hidl_plugin-rtk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_hidl_plugin-rtk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libcodec2_hidl_plugin-rtk.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk-rtk",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_vndk-rtk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libcodec2_vndk-rtk.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.common@1.2",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.common.fmq-V1-ndk",
+                "android.hardware.media.bufferpool@2.0",
+                "android.hardware.media.bufferpool2-V1-ndk",
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "libdmabufheap",
+                "libfmq",
+                "libgralloctypes",
+                "libhidlbase",
+                "libion",
+                "liblog",
+                "libnativewindow",
+                "libstagefright_foundation",
+                "libstagefright_bufferpool@2.0.1-rtk",
+                "libstagefright_aidl_bufferpool2-rtk",
+                "libui-v34",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcppbor_external-rtk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libcppbor_external-rtk.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcrypto",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcppcose_rkp-rtk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libcppcose_rkp-rtk.so",
+            ],
+            shared_libs: [
+                "libcppbor_external-rtk",
+                "libcrypto",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdecjpgwrap",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libdecjpgwrap.so",
+            ],
+            shared_libs: [
+                "libRTKOMX_OSAL_RTK",
+                "libjpu",
+                "libRtkIpc",
+                "libwrapcommon",
+                "libz",
+                "liblog",
+                "libcutils",
+                "libhardware",
+                "libion",
+                "libutils",
+                "android.hardware.power-V1-ndk",
+                "android.hardware.power@1.0",
+                "libhidlbase",
+                "libsync_rtk",
+                "android.hardware.power@1.1",
+                "android.hardware.power@1.2",
+                "android.hardware.power@1.3",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdecve1wrap",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libdecve1wrap.so",
+            ],
+            shared_libs: [
+                "libRTKOMX_OSAL_RTK",
+                "libvpu",
+                "libRtkIpc",
+                "libwrapcommon",
+                "libz",
+                "liblog",
+                "libcutils",
+                "libhardware",
+                "libion",
+                "libutils",
+                "android.hardware.power-V1-ndk",
+                "android.hardware.power@1.0",
+                "libhidlbase",
+                "libsync_rtk",
+                "android.hardware.power@1.1",
+                "android.hardware.power@1.2",
+                "android.hardware.power@1.3",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libeffects",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libeffects.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libeffectsconfig-rtk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libeffectsconfig-rtk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libeffectsconfig-rtk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libtinyxml2",
+                "libutils",
+                "libmedia_helper",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libencjpgwrap",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libencjpgwrap.so",
+            ],
+            shared_libs: [
+                "libRTKOMX_OSAL_RTK",
+                "libz",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libhardware",
+                "libjpu",
+                "libRTKAllocator",
+                "libwrapcommon",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libext_rtk_ion",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libext_rtk_ion.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libion",
+                "librtk_ion",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libfw_socket_client",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libfw_socket_client.so",
+            ],
+            shared_libs: [
+                "libz",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgui_rtk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libgui_rtk.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.common@1.1",
+                "android.hardware.graphics.common@1.2",
+                "android.hidl.token@1.0-utils",
+                "libbase",
+                "libcutils",
+                "libhidlbase",
+                "liblog",
+                "libsync",
+                "libui-v34",
+                "libutils",
+                "libvndksupport",
+                "libbinder",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libhwse.rtd1325",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libhwse.rtd1325.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libRTK_lib",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libinstall_agent",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libinstall_agent.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libjpu",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libjpu.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libkeymaster_messages-rtk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libkeymaster_messages-rtk.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libkeymaster_portable-rtk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libkeymaster_portable-rtk.so",
+            ],
+            shared_libs: [
+                "libcrypto",
+                "libcppbor_external-rtk",
+                "libcppcose_rkp-rtk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libkeymint-rtk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libkeymint-rtk.so",
+            ],
+            shared_libs: [
+                "android.hardware.security.keymint-V3-ndk",
+                "libhidlbase",
+                "android.hardware.security.rkp-V3-ndk",
+                "android.hardware.security.secureclock-V1-ndk",
+                "android.hardware.security.sharedsecret-V1-ndk",
+                "lib_android_keymaster_keymint_utils-rtk",
+                "libbase",
+                "libbinder_ndk",
+                "libcppbor_external-rtk",
+                "libcrypto",
+                "libcutils",
+                "libkeymaster_messages-rtk",
+                "libkeymaster_portable-rtk",
+                "liblog",
+                "libpuresoftkeymasterdevice-rtk",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libkeymint_rtk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libkeymint_rtk.so",
+            ],
+            shared_libs: [
+                "android.hardware.security.keymint-V3-ndk",
+                "libhidlbase",
+                "android.hardware.security.rkp-V3-ndk",
+                "android.hardware.security.secureclock-V1-ndk",
+                "android.hardware.security.sharedsecret-V1-ndk",
+                "lib_android_keymaster_keymint_utils-rtk",
+                "libbase",
+                "libbinder_ndk",
+                "libcppbor_external-rtk",
+                "libcrypto",
+                "libcutils",
+                "libkeymaster_messages-rtk",
+                "libkeymaster_portable-rtk",
+                "liblog",
+                "libutils",
+                "libkeymint-rtk",
+                "libteec",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmediautils_vendor-rtk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libmediautils_vendor-rtk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libnbaio_mono",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libnbaio_mono.so",
+            ],
+            shared_libs: [
+                "libaudioutils",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liboemcrypto",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/liboemcrypto.so",
+            ],
+            shared_libs: [
+                "libteec",
+                "libRTKAllocator_alloc_only",
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpraidl",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libpraidl.so",
+            ],
+            shared_libs: [
+                "libteec",
+                "android.hardware.drm-V1-ndk",
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcrypto",
+                "libhwbinder",
+                "libRTKAllocator_alloc_only",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpuresoftkeymasterdevice-rtk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libpuresoftkeymasterdevice-rtk.so",
+            ],
+            shared_libs: [
+                "libkeymaster_messages-rtk",
+                "libkeymaster_portable-rtk",
+                "libsoft_attestation_cert-rtk",
+                "liblog",
+                "libcppbor_external-rtk",
+                "libcppcose_rkp-rtk",
+                "libcrypto",
+                "libcutils",
+                "libbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librtk_c2_adec",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/librtk_c2_adec.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbinder",
+                "libutils",
+                "libcutils",
+                "libhardware",
+                "libui-v34",
+                "libhidlbase",
+                "android.hardware.graphics.allocator@2.0",
+                "android.hardware.graphics.common@1.1",
+                "android.hardware.graphics.common@1.2",
+                "android.hardware.graphics.mapper@2.0",
+                "android.hardware.graphics.mapper@2.1",
+                "librtk_media_hw",
+                "librtk_media_utils",
+                "android.hardware.media.c2@1.0",
+                "android.hardware.media.c2@1.1",
+                "android.hardware.media.c2@1.2",
+                "libcodec2_hidl@1.0-rtk",
+                "libcodec2_hidl@1.1-rtk",
+                "libcodec2_hidl@1.2-rtk",
+                "libcodec2_vndk-rtk",
+                "libstagefright_foundation",
+                "librtk_c2_store",
+                "librtk_media_hw_rpc",
+                "libhwbinder",
+                "libRTK_lib",
+                "libRTKOMX_OSAL_RTK",
+                "libfw_socket_client",
+                "libaudioutils",
+                "android.hardware.graphics.allocator@4.0",
+                "android.hardware.graphics.mapper@4.0",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "android.hardware.graphics.common-V7-ndk",
+                "libbinder_ndk",
+                "libRTKAllocator",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librtk_c2_store",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/librtk_c2_store.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libbase",
+                "libutils",
+                "libcodec2_hidl@1.0-rtk",
+                "libcodec2_hidl@1.1-rtk",
+                "libcodec2_hidl@1.2-rtk",
+                "libcodec2_vndk-rtk",
+                "libhidlbase",
+                "libion",
+                "libext_rtk_ion",
+                "libRTK_lib",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librtk_c2_vdec",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/librtk_c2_vdec.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbinder",
+                "libutils",
+                "libcutils",
+                "libhardware",
+                "libui-v34",
+                "libhidlbase",
+                "android.hardware.graphics.allocator@2.0",
+                "android.hardware.graphics.common@1.1",
+                "android.hardware.graphics.common@1.2",
+                "android.hardware.graphics.mapper@2.0",
+                "android.hardware.graphics.mapper@2.1",
+                "librtk_media_hw",
+                "librtk_media_utils",
+                "android.hardware.media.c2@1.0",
+                "android.hardware.media.c2@1.1",
+                "android.hardware.media.c2@1.2",
+                "libcodec2_hidl@1.0-rtk",
+                "libcodec2_hidl@1.1-rtk",
+                "libcodec2_hidl@1.2-rtk",
+                "libcodec2_vndk-rtk",
+                "libstagefright_foundation",
+                "librtk_c2_store",
+                "librtk_media_sideband",
+                "librtk_media_hw_rpc",
+                "libhwbinder",
+                "libbuflock",
+                "android.hardware.graphics.allocator@4.0",
+                "android.hardware.graphics.mapper@4.0",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "android.hardware.graphics.common-V7-ndk",
+                "libbinder_ndk",
+                "libRTKAllocator",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librtk_codec2_vendor_allocator",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/librtk_codec2_vendor_allocator.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbinder",
+                "libutils",
+                "libcutils",
+                "libhardware",
+                "libui-v34",
+                "libion",
+                "libhidlbase",
+                "libbase",
+                "libstagefright_bufferpool@2.0.1-rtk",
+                "android.hardware.media.c2@1.0",
+                "android.hardware.media.c2@1.1",
+                "android.hardware.media.c2@1.2",
+                "libcodec2_hidl@1.0-rtk",
+                "libcodec2_hidl@1.1-rtk",
+                "libcodec2_hidl@1.2-rtk",
+                "libcodec2_vndk-rtk",
+                "libRTKAllocator_alloc_only",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librtk_ion",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/librtk_ion.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutilscallstack",
+                "libion",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librtk_ion_util",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/librtk_ion_util.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutilscallstack",
+                "libion",
+                "librtk_ion",
+                "libext_rtk_ion",
+                "libRTKAllocator_alloc_only",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librtk_media_hw",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/librtk_media_hw.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "librtk_media_hw_common",
+                "librtk_media_hw_rpc",
+                "librtk_media_hw_rhal",
+                "librtk_media_hw_driver",
+                "librtk_media_utils",
+                "librtk_media_hw_ve1",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librtk_media_hw_common",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/librtk_media_hw_common.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "librtk_media_utils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librtk_media_hw_driver",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/librtk_media_hw_driver.so",
+            ],
+            shared_libs: [
+                "librtk_media_utils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librtk_media_hw_rhal",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/librtk_media_hw_rhal.so",
+            ],
+            shared_libs: [
+                "libsync",
+                "libutils",
+                "libcutils",
+                "libbinder",
+                "libui-v34",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "librtk_media_utils",
+                "librtk_media_hw_common",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librtk_media_hw_rpc",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/librtk_media_hw_rpc.so",
+            ],
+            shared_libs: [
+                "libsync",
+                "libutils",
+                "libcutils",
+                "libbinder",
+                "libui-v34",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "android.hardware.graphics.allocator@2.0",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.graphics.mapper@2.0",
+                "android.hardware.graphics.mapper@2.1",
+                "liblog",
+                "libRTK_lib",
+                "librtk_media_utils",
+                "libbuflock",
+                "libRTKAllocator",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librtk_media_hw_ve1",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/librtk_media_hw_ve1.so",
+            ],
+            shared_libs: [
+                "libsync",
+                "libutils",
+                "libcutils",
+                "libbinder",
+                "libui-v34",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "android.hardware.graphics.allocator@2.0",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.graphics.mapper@2.0",
+                "android.hardware.graphics.mapper@2.1",
+                "liblog",
+                "libRTK_lib",
+                "librtk_media_utils",
+                "libbuflock",
+                "libRTKAllocator",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librtk_media_sideband",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/librtk_media_sideband.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libhardware",
+                "libcutils",
+                "libutils",
+                "libui-v34",
+                "libbinder",
+                "libhidlbase",
+                "libSidebandClient",
+                "libgui_rtk",
+                "libion",
+                "libsync_rtk",
+                "libRTKAllocator",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librtk_media_utils",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/librtk_media_utils.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libbinder",
+                "libhwbinder",
+                "libutils",
+                "libhidlbase",
+                "libRTKAllocator",
+                "libTEEapi",
+                "libhwse.rtd1325",
+                "libRtkIpc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librtkdrm",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/librtkdrm.so",
+            ],
+            shared_libs: [
+                "libdrm",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librtkion",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/librtkion.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librtkotp_api",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/librtkotp_api.so",
+            ],
+            shared_libs: [
+                "libinstall_agent",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librtkotp_flash_api",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/librtkotp_flash_api.so",
+            ],
+            shared_libs: [
+                "libinstall_agent",
+                "librtkion",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsideband",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libsideband.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libbinder",
+                "libui-v34",
+                "libgui_rtk",
+                "libSidebandClient",
+                "libext_rtk_ion",
+                "libbuflock",
+                "android.hardware.power@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "libhardware",
+                "libsync_rtk",
+                "libRTKAllocator",
+                "android.hardware.graphics.mapper@4.0",
+                "libRTK_lib",
+                "libRTKOMX_OSAL_RTK",
+                "librtk_ion",
+                "libion",
+                "libTEEapi",
+                "libbase",
+                "libhidlbase",
+                "libprocessgroup",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsigchain_rtk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libsigchain_rtk.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsoft_attestation_cert-rtk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libsoft_attestation_cert-rtk.so",
+            ],
+            shared_libs: [
+                "libkeymaster_portable-rtk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libstagefright_aidl_bufferpool2-rtk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libstagefright_aidl_bufferpool2-rtk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libcutils",
+                "libfmq",
+                "liblog",
+                "libutils",
+                "android.hardware.media.bufferpool2-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libstagefright_bufferpool@2.0.1-rtk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libstagefright_bufferpool@2.0.1-rtk.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libfmq",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "android.hardware.media.bufferpool@2.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libstagefrighthw",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libstagefrighthw.so",
+            ],
+            shared_libs: [
+                "libbinder",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libui-v34",
+                "libstagefright_foundation",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsync_rtk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libsync_rtk.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtee_nv_seg_tool",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libtee_nv_seg_tool.so",
+            ],
+            shared_libs: [
+                "libteec",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtee_secure_store_agent",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libtee_secure_store_agent.so",
+            ],
+            shared_libs: [
+                "libteec",
+                "libcrypto",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libteec",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libteec.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtinycompress",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libtinycompress.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvpu",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libvpu.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "liblog",
+                "libTEEapi",
+                "libRTK_lib",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwifi-hal",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libwifi-hal.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "liblog",
+                "libnl",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwrapcommon",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libwrapcommon.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libRTKAllocator",
+                "libRTK_lib",
+                "libTEEapi",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdrmclearkeyplugin",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so",
+            ],
+            shared_libs: [
+                "libcrypto",
+                "liblog",
+                "libstagefright_foundation",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "mediadrm",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudiopreprocessing",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/soundfx/libaudiopreprocessing.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbundlewrapper",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/soundfx/libbundlewrapper.so",
+            ],
+            shared_libs: [
+                "libaudioutils",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdownmix",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/soundfx/libdownmix.so",
+            ],
+            shared_libs: [
+                "libaudioutils",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdynproc",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/soundfx/libdynproc.so",
+            ],
+            shared_libs: [
+                "libaudioutils",
+                "libbase",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libeffectproxy",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/soundfx/libeffectproxy.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libeffects",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libldnhncr",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/soundfx/libldnhncr.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libreverbwrapper",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/soundfx/libreverbwrapper.so",
+            ],
+            shared_libs: [
+                "libaudioutils",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvisualizer",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/soundfx/libvisualizer.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.realtek.audioutil-V2-ndk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.realtek.audioutil-V2-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.realtek.audioutil@1.0",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.realtek.audioutil@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.realtek.hdmi-V1-ndk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.realtek.hdmi-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.realtek.karaoke-V1-ndk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.realtek.karaoke-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.realtek.seutil.common@1.0",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.realtek.seutil.common@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.realtek.seutil.provider@1.0",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.realtek.seutil.provider@1.0.so",
+            ],
+            shared_libs: [
+                "vendor.realtek.seutil.common@1.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.realtek.voututil-V2-ndk",
+    owner: "realtek",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.realtek.voututil-V2-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+prebuilt_apex {
+    name: "com.google.android.widevine.nonupdatable",
+    owner: "realtek",
+    src: "proprietary/vendor/apex/com.google.android.widevine.nonupdatable.apex",
+    filename: "com.google.android.widevine.nonupdatable.apex",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "android.hardware.camera.provider-V1-external-rtk-service.xml",
+    owner: "realtek",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.camera.provider-V1-external-rtk-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "android.hardware.gatekeeper-service.rtk.xml",
+    owner: "realtek",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gatekeeper-service.rtk.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "android.hardware.power-service.rtk.xml",
+    owner: "realtek",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.power-service.rtk.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "android.hardware.security.keymint-service.rtk.xml",
+    owner: "realtek",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.keymint-service.rtk.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "android.hardware.security.secureclock-service.rtk.xml",
+    owner: "realtek",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.rtk.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "android.hardware.security.sharedsecret-service.rtk.xml",
+    owner: "realtek",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.rtk.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "android.hardware.thermal-service.rtk.xml",
+    owner: "realtek",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.thermal-service.rtk.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "android.hardware.tv.hdmi.cec-service.rtk.xml",
+    owner: "realtek",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.tv.hdmi.cec-service.rtk.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "android.hardware.tv.hdmi.connection-service.rtk.xml",
+    owner: "realtek",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.tv.hdmi.connection-service.rtk.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "android.hardware.usb-service.rtk.xml",
+    owner: "realtek",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.usb-service.rtk.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "android.hardware.wifi-service.rtk.xml",
+    owner: "realtek",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi-service.rtk.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "hwc3.xml",
+    owner: "realtek",
+    src: "proprietary/vendor/etc/vintf/manifest/hwc3.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "manifest_android.hardware.drm-service.playready.xml",
+    owner: "realtek",
+    src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.playready.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "manifest_media_c2_V1_2_rtk.xml",
+    owner: "realtek",
+    src: "proprietary/vendor/etc/vintf/manifest/manifest_media_c2_V1_2_rtk.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.realtek.audioutil.xml",
+    owner: "realtek",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.realtek.audioutil.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.realtek.karaoke@1.0-service.xml",
+    owner: "realtek",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.realtek.karaoke@1.0-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.realtek.seutil.provider@1.0-service.xml",
+    owner: "realtek",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.realtek.seutil.provider@1.0-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.realtek.voututil-service.xml",
+    owner: "realtek",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.realtek.voututil-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "GenCpuID",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/GenCpuID",
+            ],
+            shared_libs: [
+                "libteec",
+                "libcutils",
+                "liblog",
+                "libssl",
+                "libcrypto",
+                "libtee_secure_store_agent",
+                "libRtkKeysetMKII",
+                "librtkotp_api",
+                "librtkotp_flash_api",
+                "libinstall_agent",
+                "librtkion",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "GetMacSn",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/GetMacSn",
+            ],
+            shared_libs: [
+                "libteec",
+                "libcutils",
+                "liblog",
+                "libssl",
+                "libcrypto",
+                "libtee_secure_store_agent",
+                "libRtkKeysetMKII",
+                "librtkotp_api",
+                "librtkotp_flash_api",
+                "libinstall_agent",
+                "librtkion",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "PQ_ctrl",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/PQ_ctrl",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbinder",
+                "libbase",
+                "libVoutUtil_internal",
+                "libRTK_lib",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "RtkAFWLC",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/RtkAFWLC",
+            ],
+            shared_libs: [
+                "libm",
+                "liblog",
+                "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "RtkKeyset",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/RtkKeyset",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "cpuset_control",
+    owner: "realtek",
+    src: "proprietary/vendor/bin/cpuset_control.sh",
+    filename: "cpuset_control.sh",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "fwdbg",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/fwdbg",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libRTK_lib",
+                "libion",
+                "libRTKAllocator",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.audio.service.rtk",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.audio.service.rtk",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libbinder",
+                "libbinder_ndk",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libhardware",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.bluetooth@1.1-service.rtk",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service.rtk",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libbase",
+                "libutils",
+                "libhardware",
+                "libhidlbase",
+                "android.hardware.bluetooth@1.0-impl",
+                "android.hardware.bluetooth@1.1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.camera.provider-V1-external-rtk-service",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.camera.provider-V1-external-rtk-service",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "liblog",
+                "libhardware",
+                "libutils",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamera_metadata",
+                "libhardware_legacy",
+                "libsysutils",
+                "libbinder_ndk",
+                "libfmq",
+                "libtinyxml2",
+                "camera.device.aidl-external-rtk-impl",
+                "android.hardware.graphics.mapper@2.0",
+                "android.hardware.graphics.mapper@3.0",
+                "android.hardware.graphics.mapper@4.0",
+                "android.hardware.power@1.3",
+                "android.hardware.camera.provider-V1-ndk",
+                "android.hardware.camera.common-V1-ndk",
+                "android.hardware.camera.device-V1-ndk",
+                "android.hardware.power-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.drm-service.playready",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.drm-service.playready",
+            ],
+            shared_libs: [
+                "android.hardware.drm-V1-ndk",
+                "libbase",
+                "liblog",
+                "libutils",
+                "libpraidl",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.gatekeeper-service.rtk",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.gatekeeper-service.rtk",
+            ],
+            shared_libs: [
+                "android.hardware.gatekeeper-V1-ndk",
+                "libbase",
+                "libbinder_ndk",
+                "libgatekeeper",
+                "libhardware",
+                "libutils",
+                "liblog",
+                "libcutils",
+                "libtrusty",
+                "libteec",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.graphics.allocator-V1-service",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.graphics.allocator-V1-service",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libutils",
+                "libbinder_ndk",
+                "android.hardware.graphics.allocator-V1-ndk",
+                "android.hardware.graphics.allocator-V1-arm",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.graphics.composer3-service.rtk",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.graphics.composer3-service.rtk",
+            ],
+            shared_libs: [
+                "libbase-v33",
+                "libbinder",
+                "libbinder_ndk",
+                "libcutils",
+                "libdrm",
+                "librtkdrm",
+                "libgralloctypes",
+                "libhardware",
+                "libhidlbase",
+                "liblog",
+                "libui-v34",
+                "libutils",
+                "android.hardware.graphics.composer3-V2-ndk",
+                "android.hardware.graphics.mapper@4.0",
+                "libSidebandClient",
+                "libRTKAllocator_alloc_only",
+                "libbuflock",
+                "libutilscallstack",
+                "vendor.realtek.hdmi-V1-ndk",
+                "libsync_rtk",
+                "vendor.realtek.voututil-V2-ndk",
+                "libRTKAllocator",
+                "libsysutils",
+                "libhardware_legacy",
+                "libext_rtk_ion",
+                "libEGL",
+                "libGLESv3",
+                "libGLESv2",
+                "libGLESv1_CM",
+                "libpower",
+                "libVoutUtil_internal",
+                "libRTK_lib",
+                "libRTKOMX_OSAL_RTK",
+                "libion",
+                "librtk_ion",
+                "libTEEapi",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.media.c2@1.2-rtk-service",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-rtk-service",
+            ],
+            shared_libs: [
+                "libavservices_minijail",
+                "libbinder",
+                "libcutils",
+                "liblog",
+                "libbase",
+                "libutils",
+                "android.hardware.media.c2@1.0",
+                "android.hardware.media.c2@1.1",
+                "android.hardware.media.c2@1.2",
+                "libcodec2_hidl@1.0-rtk",
+                "libcodec2_hidl@1.1-rtk",
+                "libcodec2_hidl@1.2-rtk",
+                "libcodec2_vndk-rtk",
+                "libhidlbase",
+                "librtk_c2_store",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.media.omx@1.0-rtk-service",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.media.omx@1.0-rtk-service",
+            ],
+            shared_libs: [
+                "libbinder",
+                "libutils",
+                "liblog",
+                "libbase",
+                "libavservices_minijail",
+                "libcutils",
+                "libhidlbase",
+                "libstagefright_omx",
+                "libstagefright_xmlparser",
+                "android.hardware.media.omx@1.0",
+                "android.hidl.memory@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.power-service.rtk",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.power-service.rtk",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libbinder_ndk",
+                "libhardware",
+                "libhidlbase",
+                "android.hardware.power-V4-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.security.keymint-service.rtk",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.security.keymint-service.rtk",
+            ],
+            shared_libs: [
+                "android.hardware.security.keymint-V3-ndk",
+                "android.hardware.security.rkp-V3-ndk",
+                "android.hardware.security.sharedsecret-V1-ndk",
+                "android.hardware.security.secureclock-V1-ndk",
+                "libbase",
+                "libbinder_ndk",
+                "libcppbor_external-rtk",
+                "libcrypto",
+                "libkeymaster_portable-rtk",
+                "libkeymint_rtk",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.thermal-service.rtk",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.thermal-service.rtk",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "libjsoncpp",
+                "libutils",
+                "libnl",
+                "libbinder_ndk",
+                "android.frameworks.stats-V1-ndk",
+                "android.hardware.power-V1-ndk",
+                "android.hardware.thermal-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.tv.hdmi.cec-service.rtk",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.tv.hdmi.cec-service.rtk",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "liblog",
+                "libbase",
+                "libutils",
+                "libhardware",
+                "libhidlbase",
+                "android.hardware.tv.hdmi.cec-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.tv.hdmi.connection-service.rtk",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.tv.hdmi.connection-service.rtk",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "liblog",
+                "libbase",
+                "libutils",
+                "libhardware",
+                "libhidlbase",
+                "android.hardware.tv.hdmi.connection-V1-ndk",
+                "libsysutils",
+                "libhardware_legacy",
+                "vendor.realtek.audioutil@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.usb-service.rtk",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.usb-service.rtk",
+            ],
+            shared_libs: [
+                "android.hardware.usb-V1-ndk",
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.wifi-service.rtk",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.wifi-service.rtk",
+            ],
+            shared_libs: [
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "liblog",
+                "libnl",
+                "libutils",
+                "libwifi-hal",
+                "libwifi-system-iface",
+                "libxml2",
+                "android.hardware.wifi-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.realtek.audioutil-service",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.realtek.audioutil-service",
+            ],
+            shared_libs: [
+                "libbinder",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "vendor.realtek.audioutil-impl",
+                "vendor.realtek.audioutil-V2-ndk",
+                "libAudioUtil_internal",
+                "libbase",
+                "libbinder_ndk",
+                "libion",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.realtek.karaoke@1.0-service",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.realtek.karaoke@1.0-service",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libbase",
+                "libbinder",
+                "libtinyalsa",
+                "libbinder_ndk",
+                "vendor.realtek.karaoke-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.realtek.seutil.provider@1.0-service",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.realtek.seutil.provider@1.0-service",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libbinder",
+                "liblog",
+                "libutils",
+                "vendor.realtek.seutil.common@1.0",
+                "vendor.realtek.seutil.provider@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.realtek.voututil-service",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.realtek.voututil-service",
+            ],
+            shared_libs: [
+                "vendor.realtek.voututil-V2-ndk",
+                "libbase",
+                "libbinder_ndk",
+                "libutils",
+                "liblog",
+                "libVoutUtil_internal",
+                "android.hardware.common-V2-ndk",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.insmod",
+    owner: "realtek",
+    src: "proprietary/vendor/bin/init.insmod.sh",
+    filename: "init.insmod.sh",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "ipa_controller",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/ipa_controller",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "postinst_rtk",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/postinst_rtk",
+            ],
+            shared_libs: [
+                "libcrypto_utils",
+                "libcrypto",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "rkp_factory_extraction_tool_v1",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/rkp_factory_extraction_tool_v1",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libcrypto",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "rtkcmd",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/rtkcmd",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "sideband",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/sideband",
+            ],
+            shared_libs: [
+                "libsideband",
+                "libcutils",
+                "liblog",
+                "libbinder",
+                "libutils",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "libhardware",
+                "libRTK_lib",
+                "libRTKOMX_OSAL_RTK",
+                "libion",
+                "libRTKAllocator",
+                "libgui_rtk",
+                "libui-v34",
+                "libbase",
+                "libSidebandClient",
+                "libprocessgroup",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "startTEESup",
+    owner: "realtek",
+    src: "proprietary/vendor/bin/startTEESup.sh",
+    filename: "startTEESup.sh",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "tee-supplicant",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/tee-supplicant",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "tee_antirollback_clock",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/tee_antirollback_clock",
+            ],
+            shared_libs: [
+                "libteec",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "tee_debug",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/tee_debug",
+            ],
+            shared_libs: [
+                "libext_rtk_ion",
+                "libion",
+                "libteec",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "tee_log_service",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/tee_log_service",
+            ],
+            shared_libs: [
+                "libext_rtk_ion",
+                "libion",
+                "libteec",
+                "liblog",
+                "libutils",
+                "libRTKAllocator",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "tee_log_service",
+    owner: "realtek",
+    src: "proprietary/vendor/bin/tee_log_service.sh",
+    filename: "tee_log_service.sh",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "tee_secure_store_agent",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/tee_secure_store_agent",
+            ],
+            shared_libs: [
+                "libteec",
+                "libcrypto",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "thermal_logd",
+    owner: "realtek",
+    src: "proprietary/vendor/bin/thermal_logd",
+    filename: "thermal_logd",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "wifi_auto_insmod",
+    owner: "realtek",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/wifi_auto_insmod",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
